@@ -1,0 +1,22 @@
+body	{  background-color: #E2CCDD; 
+		color: #2C2F3F; 
+		font-family: Arial, sans-serif;
+		margin: 30px }
+
+h1, h2	{	font-family: Georgia, serif; }
+
+h1	{	text-transform: uppercase;
+		text-shadow: 5px 3px 6px #89437D; }
+
+h2	{	background-color: #B37076; }		
+
+p   {	text-indent: 2em; }
+
+footer	{	text-align: center; 
+			font-size: 1.5em; }
+
+a   { text-decoration: none; }
+
+.one {  font-weight: bold; }
+
+#two  {	line-height: 150%; }
