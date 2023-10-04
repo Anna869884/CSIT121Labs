@@ -1,0 +1,55 @@
+body { 	background-color: gray;
+		background-image: url("images/background.jpg"); 
+		font-family: Vernada, Arial, sans-serif;
+		text-align: center; }
+
+#wrapper, header {  background-color: lightgray; 
+					width: 50%;
+					border: 3px solid darkgray;
+					border-radius: 15px;
+					box-shadow: 0 5px 10px gray;
+					padding: 25px; 
+					margin: auto; 
+					min-width: 650px;
+					max-width: 1280px; 	}
+
+#wrapper {  background-image: url("images/lillies.png");
+			background-repeat: no-repeat;
+			background-position: right bottom;  }
+
+h1 a, h2 a, nav a 	{  text-decoration: none; }
+
+h1 a:link { color: white; }
+h1 a:visited { color: white; }
+h1 a:hover { color: black; } 
+
+h2 a:visited { color: white; }
+h2 a:visited {color: white; }
+h2 a:hover { color: black; } 
+
+nav a:visited { color: white; }
+nav a:visited { color: black; }
+nav a:hover { color: white; }
+
+nav	  {	font-size: 1.75em;
+		font-weight: bold; }
+
+header	{	background-image: url("images/lillies.png");
+			letter-spacing: 3px; }
+
+h1, h2	{	text-transform: uppercase; 
+		    text-shadow: 3px 2px 5px gray;
+		    background-color: lightsteelblue;
+		    border: 2px solid darkgray;
+		    border-radius: 10px;
+		    padding: 10px;  }
+
+h2  { color: white;  }
+
+h2, nav a { font-family: cursive;}
+
+p   {  text-align: left;
+	   font-size: 1.2em;  
+	   padding: 15px; }
+
+footer {  padding: 2em; }
