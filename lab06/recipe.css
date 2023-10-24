@@ -1,0 +1,57 @@
+body	{   background-color: #E2CCDD; 
+			color: #2C2F3F; 
+			font-family: Arial, sans-serif;
+			margin: 50px; 
+
+			background-image: url("images/greenherbs.jpg");
+			background-blend-mode: soft-light; 
+			width: 80%;} 
+
+h1, h2	{	font-family: Georgia, serif; }
+
+h1	{	   text-transform: uppercase;
+		   text-shadow: 5px 3px 6px #89437D;
+		   color: darkred; }
+
+h2	{	   background-color: lightpink; 
+
+		border-width: 3px;
+		border-style: solid; 
+		border-color: #89437D;
+		border-radius: 15px; 
+		box-shadow: 5px 5px 5px #828282;
+		padding: 0.25em;
+		opacity:0.9; }		
+
+p   {	text-indent: 2em; }
+
+footer	{	text-align: center;
+			font-weight: bold; 
+			font-size: 1.5em; }
+
+a   { text-decoration: none; }
+
+.one {  font-weight: bold; }
+
+#two  {	line-height: 150%; }
+
+img  { border-style: solid;
+	   border-color: #89437D; 	}
+
+
+footer a:visited { color: #B37076; }
+footer a:hover  { color: #FFFFFF; }
+footer a:active { color: #000000; } 
+
+
+@media ( min-width: 768px  ) {
+
+	       #wrapper { display: flex; }  
+
+	        h2 { background-color: #B37076 }
+	        h1 { color: black; }
+	       
+  			main { flex: 1; }
+	       	article { flex: 2; } 
+
+	    }
