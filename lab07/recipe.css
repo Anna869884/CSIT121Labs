@@ -1,0 +1,85 @@
+body	{   background-color: #E2CCDD; 
+			color: #2C2F3F; 
+			font-family: Arial, sans-serif;
+			margin: 50px; 
+			background-image: url("images/greenherbs.jpg");
+			background-blend-mode: soft-light; 
+			width: 80%;} 
+
+h1, h2	{	font-family: Georgia, serif; }
+
+h1	{	   text-transform: uppercase;
+		   text-shadow: 3px 3px 2px black;
+		   color: hotpink; 
+		   font-size: 3em;	}
+
+h2	{	background-color: lightpink; 
+		border-width: 3px;
+		border-style: solid; 
+		border-color: #89437D;
+		border-radius: 15px; 
+		box-shadow: 5px 5px 5px #828282;
+		padding: 0.25em;
+		opacity:0.9; }		
+
+p   { padding: 0.5em; }
+
+footer	{	text-align: center;
+		font-weight: bold; 
+		font-size: 1.5em; 
+		padding: 0.5em; }
+
+a   { text-decoration: none; }
+
+.one {  font-weight: bold; }
+
+#two  { line-height: 150%; }
+
+img  { border-style: solid;
+       border-color: #89437D; }
+
+footer a:visited { color: #B37076; }
+footer a:hover  { color: #FFFFFF; }
+footer a:active { color: #000000; } 
+
+
+table { margin: auto;
+        border: 3px solid #89437D; 
+	    background-color: ghostwhite; 
+	    border-collapse: collapse; 
+	    font-family: Georgia, serif; }
+
+th { background-color: lightpink ; 
+     font-size: 1.75em; }
+
+th, td { padding: 0.2em;
+	     border: 1px solid #89437D; }  
+
+tbody tr:nth-child(even) { background-color: lightgray; }
+
+td:last-child { text-align: right; }
+
+.eleven { text-indent: 1em; }
+
+
+
+@media ( min-width: 768px  ) {
+
+	        h2,th { background-color: #B37076 }
+	        h1 { color: #B37076; }
+
+	header { grid-area: header; }
+	section{ grid-area: section; }
+	main { grid-area:  main; }
+	aside { grid-area: aside; }
+	nav { grid-area: nav; }
+	footer { grid-area: footer; }
+	
+	       #wrapper {  display: grid; 
+	       		       grid-template: 
+	       			        "header header"	
+	       			        "section section"
+	       			        "main article"
+	       			        "aside aside"
+	       			 	    "nav nav"
+	       			        "footer footer"} }
