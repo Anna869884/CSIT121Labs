@@ -1,0 +1,125 @@
+body	{   background-color: #E2CCDD; 
+			color: #2C2F3F; 
+			font-family: Arial, sans-serif;
+			margin: 50px; 
+			background-image: url("images/greenherbs.jpg");
+			background-blend-mode: soft-light; 
+			width: 80%;} 
+
+h1, h2	{	font-family: Georgia, serif; }
+
+h1	{	   text-transform: uppercase;
+		   text-shadow: 3px 3px 2px black;
+		   color: hotpink; 
+		   font-size: 3em;	}
+
+h2, footer	{	background-color: lightpink; 
+				border-width: 3px;
+				border-style: solid; 
+				border-color: #89437D;
+				border-radius: 15px; 
+				box-shadow: 5px 5px 5px #828282;
+				text-shadow: 1px 1px white;
+				padding: 0.25em;
+				opacity:0.9; }		
+
+p   { padding: 0.5em; }
+
+footer	{	text-align: center;
+		    font-weight: bold; 
+		    font-size: 1.5em; 
+		    padding: 0.5em; }
+
+a   { text-decoration: none; }
+
+.one {  font-weight: bold; }
+
+#two  { line-height: 150%; }
+
+img  { border-style: solid;
+       border-color: #89437D; }
+
+footer a:visited { color: #657383; }
+footer a:hover  { color: #FFFFFF; }
+footer a:active { color: #000000; } 
+
+
+table { margin: auto;
+        border: 3px solid #89437D; 
+	    background-color: ghostwhite; 
+	    border-collapse: collapse; 
+	    font-family: Georgia, serif; }
+
+th { background-color: lightpink ; 
+     font-size: 1.75em; }
+
+th, td { padding: 0.2em;
+	     border: 1px solid #89437D; }  
+
+tbody tr:nth-child(even) { background-color: lightgray; }
+
+.three { text-align: right; }
+.four { text-indent: 1em; }
+
+
+form { margin: auto;
+	   max-width: 660px;
+	   border: 3px solid black;
+	   border-color: #89437D;
+	   border-radius: 15px;
+	   padding: 1.5em;	
+	   background-color: lightgray;
+	   font-family: Georgia, serif;  }
+
+fieldset { border-color: #89437D;
+		   border-radius: 10px;
+		   padding: 1em; }
+
+label, legend { font-weight: bold; }
+
+legend { color: #89437D; 
+		 font-size: large; }
+
+input[name="Firstname"], input[name="Lastname"], 
+input[name="Email"]  
+						{ border-color: purple; }	
+
+input[name="Cuisine"] { border-color: navy; } 
+
+textarea { background-color: #FFC0CB;
+		   border-radius: 5px;
+		   border: 3px solid gray;
+		   padding: 1em; }
+
+
+input[type="submit"], input[type="reset"] {
+				background-color: lightpink;
+				border-color: #89437D; 
+				border-radius: 10px; 
+				font-size: 1.2em; }	
+
+
+@media ( min-width: 768px  ) {
+
+	        h2,th, footer { background-color: #B37076 }
+	        h1 { color: #B37076; }
+	        input[type="submit"], input[type="reset"] 
+	        { background-color: #B37076; }	
+	        textarea { background-color: #E799A3;}
+	        
+
+	header { grid-area: header; }
+	section{ grid-area: section; }
+	main { grid-area:  main; }
+	aside { grid-area: aside; }
+	nav { grid-area: nav; }
+	footer { grid-area: footer; }
+	
+	       #wrapper {  display: grid; 
+	       		       grid-template: 
+	       			        "header header"	
+	       			        "section section"
+	       			        "main article"
+	       			        "aside aside"
+	       			 	    "nav nav"
+	       			        "footer footer"} }
