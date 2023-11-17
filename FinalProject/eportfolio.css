@@ -1,0 +1,136 @@
+body {  background-color: #DCD0FF; 
+	font-family: Georgia, serif; 
+	background-image: url("images/background.jpg"); 
+	background-attachment: fixed; 
+	background-size: auto; 
+	padding: 30px; 
+	margin: auto;
+	width: 80%;
+	min-width: 430px;
+	max-width: 1280px; }
+
+header { background-color: #FCDFFF;
+	 padding: 2em; 
+	 border: 5px solid #7E587E;
+	 text-shadow: 2px 1px 1px darkblue;
+	 text-align: center; 
+	 font-size: large;
+	 background-image: url("images/header.jpg"); 
+	 background-size: contain; }
+
+h2, h3 { background-color: #7E587E; 
+	 color: white; 
+	 padding: 0.5em; }
+
+h2 { text-shadow: 3px 3px 2px black; }
+
+h2, p, #gallery {  border-top: 3px solid #967BB6; 
+                   border-bottom: 3px solid #967BB6; }     
+
+h3 { border: 3px solid white; 
+     text-align: center;
+     text-shadow: 1px 1px 1px black; }
+
+nav { background-color: #B09FCA; }
+
+nav ul { list-style-type: none; 
+	 padding-left: 0;
+	 border-top: 1px solid white; }
+
+nav a, h1 a, figure a, p a { text-decoration: none; 
+		             font-weight: bold; }
+
+nav li { text-align: center; 
+	 border-bottom: 1px solid white; }		        
+
+nav a { display: block; 
+        padding: 1em 2em; }
+
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #F8F8F8; }
+nav a:hover {  color: #000066; 
+               background-color: #EAEAEA; }
+
+h1 a:link { color: #7E587E; }
+h1 a:visited { color: #7E587E; }
+h1 a:hover { color: #B09FCA; }
+
+figure { width: 200px; 
+	 padding: 5px;
+	 border: 3px solid #89437D; }
+
+figure a:link, p a:link { color: #4B0150 }
+figure a:visited, p a:visited { color: #6A0DAD; }
+figure a:hover, p a:hover { color: white; }
+
+figcaption { text-align: center; }	
+
+p { background-color: #E9CFEC; 
+    margin-bottom: 20px;	
+    padding: 1em; }
+
+article { padding: 0.5em;} 
+
+aside { padding: 1em; 
+        background-color: #D291BC; }
+
+form {  margin: auto;
+        max-width: 660px;
+        border: 3px solid black;
+        border-color: #89437D;
+	padding: 1em; }
+
+fieldset { border-color: #89437D;
+  	   padding: 1.5em; }
+
+textarea, input[name="YourName"], input[name="Email"] 
+			{ background-color: #E9CFEC; }  	   
+
+input[type="submit"], input[type="reset"] 
+			{ background-color: #7E587E;
+			border: 2px solid white;
+			color: white; 
+			font-size: large; 
+		        padding: 5px; }	  	    
+
+table { margin: auto;
+	max-width: 500px;
+        border: 3px solid #89437D; 
+	border-collapse: collapse; 
+        padding: 0.3em;  }      
+
+th, td { padding: 0.4em;
+	 border: 3px solid #89437D; }	
+
+th { background-color: #E9CFEC; 
+     text-shadow: 1px 1px purple;	
+     font-size: 20px;
+     color: #36013F; }	 
+
+table td:hover { background-color: #E9CFEC; }     
+
+footer { padding: 1em;
+         background-color: #583759; 
+         text-align: center;
+	 color: white; 
+	 text-shadow: 2px 2px 1px black; }
+
+.gold { padding: 2em; }	 
+
+#gallery { display: flex; 
+           flex-wrap: wrap;
+           justify-content: space-around;
+           background-color: #D291BC; 
+   	   margin-bottom: 20px; }
+
+@media (min-width: 768px ) {  
+
+#content { display: flex; }  
+
+            nav  { flex: 0.6; }
+	    main { flex: 3; }
+	    aside { flex: 2; } 
+
+            nav { order: 1;}
+            main { order: 2; }
+            aside { order: 3;} }
