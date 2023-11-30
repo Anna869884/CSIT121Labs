@@ -19,18 +19,10 @@ body { 	background-color: gray;
 
 h1 a, h2 a, nav a 	{  text-decoration: none; }
 
-h1 a:link { color: white; }
-h1 a:visited { color: white; }
-h1 a:hover { color: black; } 
 
-h2 a:link { color: white; }
-h2 a:visited {color: white; }
-h2 a:hover { color: black; } 
-
-nav a:link { color: white; }
-nav a:visited { color: black; }
-nav a:hover { color: white; }
-
+h1 a:link, h2 a:link, nav a:link { color: white; }
+h1 a:visited, h2 a:visited, nav a:visited { color: white; }
+h1 a:hover, h2 a:hover, nav a:hover { color: black; } 
 
 nav	  {	font-size: 1.75em;
 		font-weight: bold; }
@@ -46,8 +38,6 @@ h1, h2	{	text-transform: uppercase;
 		    padding: 10px;  }
 
 h2  { color: white;  }
-
-h2, nav a { font-family: cursive;}
 
 p   {  text-align: left;
 	   font-size: 1.2em;  
